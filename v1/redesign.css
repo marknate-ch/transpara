@@ -1,0 +1,94 @@
+/* Tenerife shuttle concept: clear ground transport story and focused booking. */
+.hero-image{background-image:url('assets/hero-shuttle-v2.jpg');background-position:center 58%}
+.hero-shade{background:linear-gradient(90deg,#06151bf5 0%,#06151bd7 30%,#06151b45 68%,#06151b17 100%),linear-gradient(0deg,#06151bbd 0%,transparent 28%)}
+.hero-content{max-width:960px;padding-top:clamp(190px,26vh,280px)}
+.hero h1{font-size:clamp(66px,8.8vw,132px);line-height:.9;max-width:900px;margin-bottom:31px}
+.hero h1 strong{white-space:nowrap}
+.hero p{font-size:17px;max-width:490px;line-height:1.6}
+.hero-shuttle{width:min(16vw,225px);right:4.2%;bottom:93px;transform:rotate(4deg)}
+.hero-flight-card{width:min(17vw,230px);transform:rotate(5deg)}
+.hero-flight-card img{aspect-ratio:3/4;object-position:50% 50%}
+.statement{min-height:0;padding-top:70px}
+.statement-copy{margin:86px auto 75px}
+.statement h2{font-size:clamp(65px,8.5vw,125px)}
+.journey-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid #ffffff3e;margin:0 -4.6%;padding:0 4.6%}
+.journey-strip>div{display:grid;grid-template-columns:50px 1fr;column-gap:12px;row-gap:8px;align-content:center;padding:34px 26px 38px;border-right:1px solid #ffffff32}
+.journey-strip>div:first-child{padding-left:0}
+.journey-strip>div:last-child{border-right:0}
+.journey-strip b{grid-row:span 2;color:var(--lime);font:700 27px 'Space Grotesk',sans-serif}
+.journey-strip strong{font:700 18px 'Space Grotesk',sans-serif;letter-spacing:-.03em}
+.journey-strip span{color:#a7b9b5;font-size:12px}
+.story-photo{background-image:url('assets/shuttle-pickup-v2.jpg');background-position:48% center}
+.story-photo::after{background-image:url('assets/client-shuttle-side.jpg')}
+.story-overlay{background:radial-gradient(circle at 100% 0%,#24474b 0%,transparent 58%)}
+.flight-moment{display:grid;grid-template-columns:52% 48%;min-height:590px;background:#0b2227;overflow:hidden}
+.flight-moment-photo{min-height:590px;background:linear-gradient(90deg,#071b2266,transparent 70%),url('assets/flying-tenerife.jpg') 32% center/cover;transform:scale(1.03);transition:transform 1.2s ease}
+.flight-moment:hover .flight-moment-photo{transform:scale(1.08)}
+.flight-moment-copy{padding:70px 11% 70px 10%;display:flex;flex-direction:column;justify-content:center;border-left:1px solid #ffffff25}
+.flight-moment-copy .eyebrow{color:#dfff78;margin-bottom:32px}
+.flight-moment h2{font-size:clamp(64px,6.3vw,100px);margin-bottom:30px}
+.flight-moment p{max-width:480px;color:#c2d0cc;font-size:17px;line-height:1.65;margin-bottom:42px}
+.flight-moment .text-link{color:#dfff78}
+.closing-image{background:linear-gradient(90deg,#07171df4,#07171d9e 53%,#07171d18),url('assets/hero-shuttle-v2.jpg') center 48%/cover}
+.closing h2{font-size:clamp(64px,8.6vw,128px);max-width:1000px}
+.booking{background:#f4f3ed}
+.booking-intro{max-width:1120px;align-items:end}
+.booking-intro>div:first-child{max-width:770px}
+.booking h2{font-size:clamp(60px,7.4vw,102px);line-height:.94}
+.booking-intro p{max-width:570px;line-height:1.6}
+.booking-steps{max-width:1120px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 14px}
+.booking-steps span{padding:13px 15px;background:#e5e9df;color:#233b39;font:700 10px 'Space Grotesk',sans-serif;letter-spacing:.07em}
+.booking-steps b{color:#ed6339;font-size:14px;margin-right:15px}
+.booking-board{grid-template-columns:minmax(0,1.38fr) minmax(320px,.92fr);gap:14px}
+.booking-board .calendar-shell{background:#fff;border:1px solid #dce0d8;border-radius:4px;box-shadow:0 14px 34px #06151b0a}
+.booking-board .day{min-height:53px;border-radius:3px}
+.booking-board .day:focus-visible,.booking-board .slot-time:focus-visible,.mode:focus-visible{outline:3px solid #e96636;outline-offset:2px}
+.booking-board .slot-panel{background:#173537;color:#fff;border-radius:4px;padding:31px;box-shadow:0 14px 34px #06151b16}
+.booking-board .slot-panel .eyebrow{color:#dfff78}
+.booking-board .slot-panel p{color:#c7d7d2}
+.booking-board .slot-time{background:#e1fd83;color:#102a2d;border-radius:3px;min-height:73px}
+.booking-board .slot-time:hover:not(:disabled){background:#f0ffb6}
+.booking-board .slot-time:disabled{background:#2b4a4a;color:#829d98}
+.booking-board .slot-note{color:#b8ccc6}
+.slot-empty-mark{color:#dfff78;opacity:.12}
+.demo-disclaimer{font-size:11px;line-height:1.55}
+dialog{border-radius:6px}
+.modal-summary{background:#e0f8a0}
+@media(max-width:900px){
+  .hero h1 strong{white-space:normal}
+  .hero-shuttle{width:160px;right:4%;bottom:60px}
+  .booking-board{grid-template-columns:1fr;max-width:670px}
+  .booking-steps{max-width:670px}
+  .flight-moment{grid-template-columns:1fr}
+  .flight-moment-photo{min-height:400px;background-position:50% 55%}
+  .flight-moment-copy{padding:70px 7%;border-left:0}
+}
+@media(max-width:700px){
+  .hero{min-height:700px}
+  .hero-image{background-position:60% center}
+  .hero-shade{background:linear-gradient(90deg,#06151be8,#06151b79),linear-gradient(0deg,#06151be0,transparent 45%)}
+  .hero-content{padding-top:185px}
+  .hero h1{font-size:clamp(56px,13vw,84px);max-width:530px}
+  .hero p{font-size:14px;max-width:340px}
+  .statement{padding-top:55px}
+  .statement-copy{margin:70px auto 58px}
+  .journey-strip{grid-template-columns:1fr;margin:0 -20px;padding:0 20px}
+  .journey-strip>div{padding:22px 0;border-right:0;border-bottom:1px solid #ffffff30}
+  .journey-strip>div:last-child{border-bottom:0}
+  .story-photo{background-position:54% center}
+  .booking-intro{margin:48px 0 26px}
+  .booking h2{font-size:clamp(54px,12vw,78px)}
+  .booking-steps{gap:4px}
+  .booking-steps span{font-size:8px;padding:10px 7px;line-height:1.4}
+  .booking-steps b{font-size:11px;margin-right:4px}
+  .closing h2{font-size:clamp(57px,11vw,88px)}
+  .flight-moment-photo{min-height:320px}
+  .flight-moment-copy{padding:62px 20px}
+  .flight-moment h2{font-size:clamp(58px,12vw,80px)}
+  .flight-moment p{font-size:15px}
+}
+@media(max-width:600px){
+  .hero-shuttle{width:118px;bottom:42px}
+  .hero-flight-card{width:128px;bottom:34px}
+  .booking-board .slot-panel{padding:23px}
+}
