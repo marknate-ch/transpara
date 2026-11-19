@@ -1,4 +1,16 @@
 /* Client transport imagery and a compact, adjacent booking flow. */
+.solar-symbols { position: absolute; width: 0; height: 0; }
+.solar-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex: none;
+  vertical-align: -.125em;
+}
+.button .solar-icon, .graphic-wind .solar-icon, .slot-empty-mark .solar-icon { display: block; }
+.graphic-wind .solar-icon { margin-inline: auto; max-width: 100%; }
+.slot-empty-mark .solar-icon { height: .6em; }
+.menu-toggle .solar-icon { vertical-align: middle; }
 .about-photo {
   display: block;
   width: min(35vw, 500px);
