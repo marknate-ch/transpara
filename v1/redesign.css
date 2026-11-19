@@ -1,5 +1,5 @@
 /* Tenerife shuttle concept: clear ground transport story and focused booking. */
-.hero-image{background-image:url('assets/client-tenerife-home.webp');background-position:center 56%}
+.hero-image{background-image:url('assets/client-flight-at-sunset.webp');background-position:center 28%}
 .hero-shade{background:linear-gradient(90deg,#06151bf5 0%,#06151bd7 30%,#06151b45 68%,#06151b17 100%),linear-gradient(0deg,#06151bbd 0%,transparent 28%)}
 .hero-content{max-width:960px;padding-top:clamp(190px,26vh,280px)}
 .hero h1{font-size:clamp(66px,8.8vw,132px);line-height:.9;max-width:900px;margin-bottom:31px}
@@ -20,7 +20,7 @@
 .journey-strip span{color:#a7b9b5;font-size:12px}
 .story-overlay{background:radial-gradient(circle at 100% 0%,#24474b 0%,transparent 58%)}
 .flight-moment{display:grid;grid-template-columns:52% 48%;min-height:590px;background:#0b2227;overflow:hidden}
-.flight-moment-photo{min-height:590px;background:linear-gradient(90deg,#071b2266,transparent 70%),url('assets/client-flight-at-sunset.webp') 62% 30%/cover;transform:scale(1.03);transition:transform 1.2s ease}
+.flight-moment-photo{min-height:590px;background:linear-gradient(90deg,#071b2266,transparent 70%),url('assets/client-tenerife-home.webp') 53% 53%/cover;transform:scale(1.03);transition:transform 1.2s ease}
 .flight-moment:hover .flight-moment-photo{transform:scale(1.08)}
 .flight-moment-copy{padding:70px 11% 70px 10%;display:flex;flex-direction:column;justify-content:center;border-left:1px solid #ffffff25}
 .flight-moment-copy .eyebrow{color:#dfff78;margin-bottom:32px}
@@ -63,7 +63,7 @@ dialog{border-radius:6px}
 }
 @media(max-width:700px){
   .hero{min-height:700px}
-  .hero-image{background-position:60% center}
+  .hero-image{background-position:50% center}
   .hero-shade{background:linear-gradient(90deg,#06151be8,#06151b79),linear-gradient(0deg,#06151be0,transparent 45%)}
   .hero-content{padding-top:185px}
   .hero h1{font-size:clamp(56px,13vw,84px);max-width:530px}
@@ -88,4 +88,8 @@ dialog{border-radius:6px}
   .hero{height:auto;min-height:max(700px,100svh)}
   .hero-flight-card{position:relative;right:auto;bottom:auto;width:128px;margin:34px 20px 58px auto}
   .booking-board .slot-panel{padding:23px}
+}
+
+@media(max-width:360px){
+  .hero-image{background-position:53% center}
 }

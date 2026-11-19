@@ -34,7 +34,7 @@
   position: relative;
   inset: auto;
   min-height: 620px;
-  background: url('assets/client-shuttle-front.jpg') center / cover;
+  background: url('assets/client-volcanic-highlands.webp') 54% center / cover;
   transform: none !important;
 }
 .story-photo::after {
@@ -46,7 +46,7 @@
   bottom: 8%;
   z-index: 2;
   border: 9px solid #0b2227;
-  background: url('assets/client-shuttle-side.jpg') center / cover;
+  background: url('assets/client-tenerife-bay.webp') center / cover;
   box-shadow: 0 20px 50px #00131678;
 }
 .story-overlay {
@@ -61,8 +61,31 @@
 }
 .story-overlay p { max-width: 420px; font-size: clamp(16px, 1.4vw, 20px); line-height: 1.5; margin: 0 0 60px; }
 .story-overlay .coordinate { align-self: flex-start; }
-.photo-one { background-image: linear-gradient(0deg, #041b24ed, transparent 68%), url('assets/client-after-landing.webp'); background-position: center 35%; }
-.photo-two { background-image: linear-gradient(0deg, #041b24ed, transparent 68%), url('assets/client-shuttle-side.jpg'); background-position: center; }
+.photo-one { background-image: linear-gradient(180deg, #041b249e, transparent 30%, transparent 38%, #041b24ed), url('assets/client-after-landing.webp'); background-position: center 35%; }
+.photo-two { background-image: linear-gradient(180deg, #041b249e, transparent 30%, transparent 38%, #041b24ed), url('assets/client-landing-at-sunset.webp'); background-position: center 48%; }
+
+.photo-gallery { background: #0b2227; }
+.photo-gallery h2 { font-size: clamp(42px, 7vw, 100px); margin: 0 0 34px; }
+.photo-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.photo-gallery-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.photo-gallery-grid .gallery-flowers { object-position: center 59%; }
+.photo-gallery-grid .gallery-stones { object-position: center 36%; }
+@media (max-width: 700px) {
+  .photo-gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+}
 
 .booking-intro { margin-bottom: 38px; }
 .booking h2 { font-size: clamp(62px, 8vw, 116px); }

@@ -3,7 +3,7 @@
 .booking-board{grid-template-columns:minmax(0,1.38fr) minmax(350px,.92fr);gap:18px}
 .booking-board .calendar-shell{padding:clamp(22px,2.3vw,36px);box-shadow:0 22px 55px #06151b14}
 .booking-board .day{min-height:clamp(58px,5.6vw,78px)}
-.booking-board .slot-panel{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(135deg,#102c30f5 0%,#173537e8 70%,#10282bbf 100%),url('assets/client-shuttle-side.jpg') center 54%/cover;color:#fff;padding:clamp(30px,3vw,48px);box-shadow:0 22px 55px #06151b25}
+.booking-board .slot-panel{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(135deg,#102c30f5 0%,#173537e8 70%,#10282bbf 100%);color:#fff;padding:clamp(30px,3vw,48px);box-shadow:0 22px 55px #06151b25}
 .booking-board .slot-panel::before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 84% 80%,#dfff7840,transparent 40%),repeating-linear-gradient(115deg,transparent 0 36px,#ffffff09 37px,#ffffff09 38px,transparent 39px 75px);pointer-events:none}
 .booking-board .slot-panel h3{max-width:12ch;font-size:clamp(32px,3.4vw,49px);line-height:1.02;letter-spacing:-.065em}
 .booking-board .slot-panel p{max-width:34ch;font-size:15px}
