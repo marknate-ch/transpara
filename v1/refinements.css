@@ -1,4 +1,12 @@
 /* Client transport imagery and a compact, adjacent booking flow. */
+.about-photo {
+  display: block;
+  width: min(35vw, 500px);
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  flex: none;
+}
 .hero-shuttle {
   position: absolute;
   z-index: 3;
@@ -11,7 +19,7 @@
   box-shadow: 0 18px 50px #00131680;
   transform: rotate(3deg);
 }
-.hero-shuttle img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.hero-shuttle img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
 .hero-shuttle span { display: flex; justify-content: space-between; gap: 8px; padding: 11px 8px 7px; font-size: 9px; font-weight: 700; letter-spacing: .08em; }
 .hero-shuttle b { font-size: 16px; line-height: .7; }
 .visual-story {
@@ -53,7 +61,7 @@
 }
 .story-overlay p { max-width: 420px; font-size: clamp(16px, 1.4vw, 20px); line-height: 1.5; margin: 0 0 60px; }
 .story-overlay .coordinate { align-self: flex-start; }
-.photo-one { background-image: linear-gradient(0deg, #041b24ed, transparent 68%), url('assets/client-shuttle-front.jpg'); background-position: center; }
+.photo-one { background-image: linear-gradient(0deg, #041b24ed, transparent 68%), url('assets/client-after-landing.webp'); background-position: center 35%; }
 .photo-two { background-image: linear-gradient(0deg, #041b24ed, transparent 68%), url('assets/client-shuttle-side.jpg'); background-position: center; }
 
 .booking-intro { margin-bottom: 38px; }
@@ -125,6 +133,7 @@
 .demo-disclaimer { max-width: 1120px; }
 
 @media (max-width: 900px) {
+  .about-photo { width: min(37vw, 500px); }
   .hero-shuttle { width: 180px; right: 4%; bottom: 62px; }
   .visual-story { grid-template-columns: 1fr; }
   .story-photo { min-height: 440px; }
@@ -133,6 +142,9 @@
   .story-overlay h2 { font-size: clamp(62px, 9vw, 100px); }
   .booking-board { grid-template-columns: 1fr; max-width: 670px; }
   .booking-board .slot-panel { min-height: 320px; }
+}
+@media (max-width: 700px) {
+  .about-photo { width: min(100%, 480px); margin: 0 0 40px; }
 }
 @media (max-width: 600px) {
   .hero-shuttle { width: 128px; right: 20px; bottom: 45px; }

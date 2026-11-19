@@ -1,5 +1,5 @@
 /* Tenerife shuttle concept: clear ground transport story and focused booking. */
-.hero-image{background-image:url('assets/hero-shuttle-v2.jpg');background-position:center 58%}
+.hero-image{background-image:url('assets/client-tenerife-home.webp');background-position:center 56%}
 .hero-shade{background:linear-gradient(90deg,#06151bf5 0%,#06151bd7 30%,#06151b45 68%,#06151b17 100%),linear-gradient(0deg,#06151bbd 0%,transparent 28%)}
 .hero-content{max-width:960px;padding-top:clamp(190px,26vh,280px)}
 .hero h1{font-size:clamp(66px,8.8vw,132px);line-height:.9;max-width:900px;margin-bottom:31px}
@@ -18,18 +18,16 @@
 .journey-strip b{grid-row:span 2;color:var(--lime);font:700 27px 'Space Grotesk',sans-serif}
 .journey-strip strong{font:700 18px 'Space Grotesk',sans-serif;letter-spacing:-.03em}
 .journey-strip span{color:#a7b9b5;font-size:12px}
-.story-photo{background-image:url('assets/shuttle-pickup-v2.jpg');background-position:48% center}
-.story-photo::after{background-image:url('assets/client-shuttle-side.jpg')}
 .story-overlay{background:radial-gradient(circle at 100% 0%,#24474b 0%,transparent 58%)}
 .flight-moment{display:grid;grid-template-columns:52% 48%;min-height:590px;background:#0b2227;overflow:hidden}
-.flight-moment-photo{min-height:590px;background:linear-gradient(90deg,#071b2266,transparent 70%),url('assets/flying-tenerife.jpg') 32% center/cover;transform:scale(1.03);transition:transform 1.2s ease}
+.flight-moment-photo{min-height:590px;background:linear-gradient(90deg,#071b2266,transparent 70%),url('assets/client-flight-at-sunset.webp') 62% 30%/cover;transform:scale(1.03);transition:transform 1.2s ease}
 .flight-moment:hover .flight-moment-photo{transform:scale(1.08)}
 .flight-moment-copy{padding:70px 11% 70px 10%;display:flex;flex-direction:column;justify-content:center;border-left:1px solid #ffffff25}
 .flight-moment-copy .eyebrow{color:#dfff78;margin-bottom:32px}
 .flight-moment h2{font-size:clamp(64px,6.3vw,100px);margin-bottom:30px}
 .flight-moment p{max-width:480px;color:#c2d0cc;font-size:17px;line-height:1.65;margin-bottom:42px}
 .flight-moment .text-link{color:#dfff78}
-.closing-image{background:linear-gradient(90deg,#07171df4,#07171d9e 53%,#07171d18),url('assets/hero-shuttle-v2.jpg') center 48%/cover}
+.closing-image{background:linear-gradient(90deg,#07171df4,#07171d9e 53%,#07171d18),url('assets/client-tenerife-coast.webp') center 48%/cover}
 .closing h2{font-size:clamp(64px,8.6vw,128px);max-width:1000px}
 .booking{background:#f4f3ed}
 .booking-intro{max-width:1120px;align-items:end}
@@ -75,7 +73,6 @@ dialog{border-radius:6px}
   .journey-strip{grid-template-columns:1fr;margin:0 -20px;padding:0 20px}
   .journey-strip>div{padding:22px 0;border-right:0;border-bottom:1px solid #ffffff30}
   .journey-strip>div:last-child{border-bottom:0}
-  .story-photo{background-position:54% center}
   .booking-intro{margin:48px 0 26px}
   .booking h2{font-size:clamp(54px,12vw,78px)}
   .booking-steps{gap:4px}
@@ -88,7 +85,7 @@ dialog{border-radius:6px}
   .flight-moment p{font-size:15px}
 }
 @media(max-width:600px){
-  .hero-shuttle{width:118px;bottom:42px}
-  .hero-flight-card{width:128px;bottom:34px}
+  .hero{height:auto;min-height:max(700px,100svh)}
+  .hero-flight-card{position:relative;right:auto;bottom:auto;width:128px;margin:34px 20px 58px auto}
   .booking-board .slot-panel{padding:23px}
 }
